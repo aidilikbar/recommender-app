@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <i class="fas fa-star fa-2x text-blue-500 mr-2"></i>
+                        <span class="text-lg font-bold text-gray-800">Recommender App</span>
                     </a>
                 </div>
 
@@ -14,6 +15,11 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+
+                    <!-- Health Records -->
+                    <x-nav-link :href="route('health-status')" :active="request()->routeIs('health-status')">
+                        {{ __('Health Status') }}
                     </x-nav-link>
                 </div>
             </div>
