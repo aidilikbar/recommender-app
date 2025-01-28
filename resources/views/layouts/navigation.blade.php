@@ -21,6 +21,7 @@
                     <x-nav-link :href="route('health-status')" :active="request()->routeIs('health-status')">
                         {{ __('Health Status') }}
                     </x-nav-link>
+
                 </div>
             </div>
 
