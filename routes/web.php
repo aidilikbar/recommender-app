@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HealthStatusController;
+use App\Http\Controllers\FoodRecommendationController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/health-status', [HealthStatusController::class, 'index'])
         ->middleware(['auth', 'verified'])
         ->name('health-status');
+
+    Route::get('/food-recommendation', [FoodRecommendationController::class, 'index'])
+        ->middleware(['auth', 'verified'])
+        ->name('food-recommendation');
 
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

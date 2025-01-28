@@ -22,6 +22,11 @@
                         {{ __('Health Status') }}
                     </x-nav-link>
 
+                    <!-- Food Recommendation -->
+                    <x-nav-link :href="route('food-recommendation')" :active="request()->routeIs('food-recommendation')">
+                        {{ __('Food Recommendation') }}
+                    </x-nav-link>
+
                 </div>
             </div>
 
