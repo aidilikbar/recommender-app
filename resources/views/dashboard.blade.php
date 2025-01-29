@@ -11,7 +11,7 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                 <h2 class="text-lg mb-4">Welcome, <span class="font-bold">{{ auth()->user()->name }}</span></h2>
                     <p class="text-sm">
-                        This is the dashboard of the Recommender App. You can view your health status, monitoring data, and decision support here.
+                        This is the dashboard of the Recommender App. </br>You can view your health status and food recommendations based on your current health situations.
                     </p>
                 </div>
                 <div class="p-6 text-gray-900 dark:text-gray-100">
